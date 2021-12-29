@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import axios from 'axios';
+import Greet from './components/Greet';
+import Welcome from './components/Welcome'
+import Hello from './components/Hello'
 
 //This is the "promise-y version"
 // fetch('https:///api.cryptonator.com/api/ticker/btc-usd')
@@ -25,13 +28,13 @@ import axios from 'axios';
 // }
 
 //axios
-axios.get('https:///api.cryptonator.com/api/ticker/btc-usd')
-  .then(res => {
-    console.log(res.data.ticker.price)
-  })
-  .catch(err => {
-    console.log("Error!", err)
-  })
+// axios.get('https:///api.cryptonator.com/api/ticker/btc-usd')
+//   .then(res => {
+//     console.log(res.data.ticker.price)
+//   })
+//   .catch(err => {
+//     console.log("Error!", err)
+//   })
 
 // const fetchBitcoinPrice = async () => {
 //   try {
@@ -43,13 +46,13 @@ axios.get('https:///api.cryptonator.com/api/ticker/btc-usd')
 // }
 
 
-axios.get('https://icanhazdadjoke.com/', {headers: {Accept: 'application/json'}})
-  .then(res => {
-    console.log(res.data.joke)
-  })
-  .catch(err => {
-    console.log("Error!", err)
-  })
+// axios.get('https://icanhazdadjoke.com/', {headers: {Accept: 'application/json'}})
+//   .then(res => {
+//     console.log(res.data.joke)
+//   })
+//   .catch(err => {
+//     console.log("Error!", err)
+//   })
 
 // const getDadJoke = async () => {
 //   const config = { headers: {Accept: 'application/json'}}
@@ -61,20 +64,11 @@ axios.get('https://icanhazdadjoke.com/', {headers: {Accept: 'application/json'}}
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Greet name='Braum' heroName='The Best'>This is children props</Greet>
+      
+      <Welcome name='Braum' heroName='Class Component'/>
+
+      <Hello />
     </div>
   );
 }
