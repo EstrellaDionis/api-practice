@@ -1,13 +1,15 @@
 import React from 'react';
 
-const Greet = (props) => {
-    console.log(props)
+const Greet = ({name, heroName}) => {
+    //we are destructuring in the parameter with curly braces here instead of props
+    //you can also do:
+    //const {name, heroName} = props and it would work the exact same.
     return (
         <div>
             <h1>
-                Hello {props.name} A.K.A {props.heroName}
+                Hello {name} A.K.A {heroName}
             </h1>
-            {props.children}
+            {/* {props.children} */}
         </div>
     )
 }

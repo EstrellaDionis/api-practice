@@ -3,8 +3,14 @@ import './App.css';
 import React from 'react';
 import axios from 'axios';
 import Greet from './components/Greet';
-import Welcome from './components/Welcome'
-import Hello from './components/Hello'
+import Welcome from './components/Welcome';
+import Hello from './components/Hello';
+import Message from './components/Message';
+import Counter from './components/Counter';
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
+
+
 
 //This is the "promise-y version"
 // fetch('https:///api.cryptonator.com/api/ticker/btc-usd')
@@ -65,10 +71,18 @@ function App() {
   return (
     <div className="App">
       <Greet name='Braum' heroName='The Best'>This is children props</Greet>
-      
+
       <Welcome name='Braum' heroName='Class Component'/>
 
       <Hello />
+
+      <Message />
+
+      <Counter />
+
+      <FunctionClick />
+
+      <ClassClick />
     </div>
   );
 }
