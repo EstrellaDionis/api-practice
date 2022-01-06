@@ -15,6 +15,9 @@ import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
 import Stylesheet from './components/Stylesheet';
 import Inline from './components/Inline';
+import Form from './components/Form'
+
+
 
 //This is the "promise-y version"
 // fetch('https:///api.cryptonator.com/api/ticker/btc-usd')
@@ -99,6 +102,8 @@ function App() {
       <Stylesheet primary={true}/>
 
       <Inline />
+
+      <Form />
     </div>
   );
 }
