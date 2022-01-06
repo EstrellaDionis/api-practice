@@ -13,6 +13,8 @@ import EventBind from './components/EventBind';
 import ParentComponent from './components/ParentComponent';
 import UserGreeting from './components/UserGreeting';
 import NameList from './components/NameList';
+import Stylesheet from './components/Stylesheet';
+import Inline from './components/Inline';
 
 //This is the "promise-y version"
 // fetch('https:///api.cryptonator.com/api/ticker/btc-usd')
@@ -93,6 +95,10 @@ function App() {
       <UserGreeting />
 
       <NameList />
+
+      <Stylesheet primary={true}/>
+
+      <Inline />
     </div>
   );
 }
