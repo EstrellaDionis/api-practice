@@ -17,7 +17,8 @@ import Stylesheet from './components/Stylesheet';
 import Inline from './components/Inline';
 import Form from './components/Form'
 import LifecycleA from './components/LifecycleA';
-
+import FragmentDemo from './components/FragmentDemo';
+import Table from './components/Table';
 
 
 //This is the "promise-y version"
@@ -78,7 +79,7 @@ import LifecycleA from './components/LifecycleA';
 function App() {
   return (
     <div className="App">
-      <Greet name='Braum' heroName='The Best'>This is children props</Greet>
+      {/* <Greet name='Braum' heroName='The Best'>This is children props</Greet>
 
       <Welcome name='Braum' heroName='Class Component'/>
 
@@ -107,6 +108,10 @@ function App() {
       <Form />
 
       <LifecycleA />
+
+      <FragmentDemo /> */}
+
+      <Table />
     </div>
   );
 }
