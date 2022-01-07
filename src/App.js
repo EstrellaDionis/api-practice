@@ -19,6 +19,8 @@ import Form from './components/Form'
 import LifecycleA from './components/LifecycleA';
 import FragmentDemo from './components/FragmentDemo';
 import Table from './components/Table';
+import PureComp from './PureComp';
+import ParentComp from './ParentComp';
 
 
 //This is the "promise-y version"
@@ -109,9 +111,11 @@ function App() {
 
       <LifecycleA />
 
-      <FragmentDemo /> */}
+      <FragmentDemo />
 
-      <Table />
+      <Table /> */}
+
+      <ParentComp />
     </div>
   );
 }
